@@ -2,6 +2,8 @@ import "./globals.css";
 import { Varta } from "next/font/google";
 
 import Navbar from "./components/navbar/Navbar";
+import Modal from "./components/modals/modal";
+import RegisterModal from "./components/modals/RegisterModal";
 
 const font = Varta({ subsets: ["latin"] });
 
@@ -18,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <Modal />
+        <RegisterModal />
         <Navbar />
         {children}
       </body>
